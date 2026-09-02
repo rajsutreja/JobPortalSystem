@@ -353,52 +353,100 @@ CREATE TABLE applications (
 
 ```
 JobPortalSystem/
-├── src/main/java/com/project/JobPortalSystem/
-│   ├── Controller/
-│   │   ├── UserController.java
-│   │   ├── JobController.java
-│   │   ├── ApplicationController.java
-│   │   ├── ResumeController.java
-│   │   ├── ReportController.java
-│   │   └── AdminController.java
-│   ├── Service/
-│   │   ├── UserService.java
-│   │   ├── JobService.java
-│   │   ├── EmailService.java
-│   │   └── ReportService.java
-│   ├── Repository/
-│   │   ├── UserRepository.java
-│   │   ├── JobRepository.java
-│   │   └── ApplicationRepository.java
-│   ├── Entity/
-│   │   ├── users.java
-│   │   ├── jobs.java
-│   │   ├── applications.java
-│   │   ├── UserRole.java
-│   │   └── UserStatus.java
-│   ├── DTO/
-│   │   ├── UserDTO.java
-│   │   ├── JobDTO.java
-│   │   └── VerifyOtpRequestDTO.java
-│   ├── Filter/
-│   │   └── JwtFilter.java
-│   ├── Utils/
-│   │   ├── JwtUtil.java
-│   │   └── EmailUtil.java
-│   ├── Config/
-│   │   ├── SecurityConfig.java
-│   │   └── RedisConfig.java
-│   └── JobPortalSystemApplication.java
-├── src/main/resources/
-│   ├── application.properties
-│   ├── application-dev.properties
-│   ├── application-prod.properties
-│   └── application-example.properties
-├── src/test/java/
-├── pom.xml
+│
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+│
+├── src/
+│   │
+│   ├── main/
+│   │   │
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── project/
+│   │   │           └── JobPortalSystem/
+│   │   │               │
+│   │   │               ├── Config/
+│   │   │               │   ├── OpenApiConfig.java
+│   │   │               │   ├── RedisConfig.java
+│   │   │               │   └── SecurityConfig.java
+│   │   │               │
+│   │   │               ├── Controller/
+│   │   │               │   ├── AdminController.java
+│   │   │               │   ├── ApplicationController.java
+│   │   │               │   ├── JobController.java
+│   │   │               │   ├── ReportController.java
+│   │   │               │   ├── ResumeController.java
+│   │   │               │   └── UserController.java
+│   │   │               │
+│   │   │               ├── DTO/
+│   │   │               │   ├── ApplicationDTO.java
+│   │   │               │   ├── ApplicationsResponse.java
+│   │   │               │   ├── DashboardDto.java
+│   │   │               │   ├── JobDto.java
+│   │   │               │   ├── ReportDto.java
+│   │   │               │   ├── ReportRequest.java
+│   │   │               │   ├── UserDto.java
+│   │   │               │   └── VerifyOtpRequestDTO.java
+│   │   │               │
+│   │   │               ├── Entity/
+│   │   │               │   ├── Report.java
+│   │   │               │   ├── UserRole.java
+│   │   │               │   ├── UserRoleConverter.java
+│   │   │               │   ├── UserStatus.java
+│   │   │               │   ├── UserStatusConverter.java
+│   │   │               │   ├── application.java
+│   │   │               │   ├── jobs.java
+│   │   │               │   ├── resume.java
+│   │   │               │   └── users.java
+│   │   │               │
+│   │   │               ├── Repository/
+│   │   │               │   ├── ApplicationRepository.java
+│   │   │               │   ├── JobsRepository.java
+│   │   │               │   ├── ReportRepository.java
+│   │   │               │   ├── ResumeRepository.java
+│   │   │               │   └── UserRepository.java
+│   │   │               │
+│   │   │               ├── Servies/
+│   │   │               │   ├── AdminService.java
+│   │   │               │   ├── ApplicationService.java
+│   │   │               │   ├── EmailService.java
+│   │   │               │   ├── JobsService.java
+│   │   │               │   ├── RedisService.java
+│   │   │               │   ├── ReportService.java
+│   │   │               │   ├── ResumeService.java
+│   │   │               │   ├── UserDetailsServiceImpl.java
+│   │   │               │   └── UserService.java
+│   │   │               │
+│   │   │               ├── Utils/
+│   │   │               │   └── JwtUtil.java
+│   │   │               │
+│   │   │               ├── filter/
+│   │   │               │   └── Jwtfilter.java
+│   │   │               │
+│   │   │               └── JobPortalSystemApplication.java
+│   │   │
+│   │   └── resources/
+│   │       ├── application-dev.properties
+│   │       ├── application-example.properties
+│   │       ├── application-prod.properties
+│   │       └── application.properties
+│   │
+│   └── test/
+│       └── java/
+│           └── com/
+│               └── project/
+│                   └── JobPortalSystem/
+│
+├── .gitattributes
+├── .gitignore
+├── HELP.md
 ├── README.md
 ├── SETUP.md
-└── .gitignore
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
 ```
 
 ## Security
