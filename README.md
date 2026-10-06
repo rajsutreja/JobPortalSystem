@@ -2,6 +2,8 @@
 
 A job portal backend built with Spring Boot 4.1, Spring Security, JWT authentication, and Redis caching. It connects job seekers with employers — job seekers can search and apply for roles, employers can post openings and manage applicants, and admins can oversee the whole platform.
 
+**Live API docs (Swagger UI):** [https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html](https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html)
+
 ## Table of Contents
 
 * [Overview](#overview)
@@ -234,10 +236,14 @@ curl http://localhost:8080/jobportal/users/login
 
 ## API Documentation
 
-### You can see here All API :
-     ``` https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html#/
+Interactive Swagger UI (live deployment): [https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html](https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html)
 
-###In Your Localhost run to :     
+Running locally, Swagger UI is at `http://localhost:8080/jobportal/swagger-ui/index.html`.
+
+> The live app runs on Railway's free tier and may sleep when idle, so the first request can take 15-30 seconds while it wakes up.
+
+Example requests against a local instance:
+
 ### Sign up
 
 ```http

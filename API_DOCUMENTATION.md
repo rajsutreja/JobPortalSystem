@@ -4,8 +4,7 @@ REST API for a job portal where **job seekers** search and apply for jobs, **rec
 
 - **Total APIs:** 36
 - **Format:** JSON (`application/json`)
-- **Interactive docs:** Swagger UI
-- **Repository:** https://github.com/rajsutreja/JobPortalSystem
+- **Interactive docs (Swagger UI):** [https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html](https://jobportalsystem-production-4cc4.up.railway.app/jobportal/swagger-ui/index.html)
 
 ## API Summary
 
